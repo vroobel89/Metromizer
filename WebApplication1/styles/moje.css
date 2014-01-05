@@ -1,0 +1,201 @@
+﻿body {
+    background-color: #f1f1f1;
+}
+
+
+
+.main-container {
+    width: 900px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.vertical-bar {
+    background-color: lightgray;
+    height: 0.5px;
+}
+
+.metronome-info {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.footer {
+    height: 40px;
+    background-color: rgb(248, 248, 248);
+    border-color: rgb(231, 231, 231);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.footer-note {
+    width: 215px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.simple-panel {
+    width: 259px;
+    margin: 40px auto 20px;
+    height: 200px;
+}
+
+.row-two {
+    float: left;
+    width: 250px;
+    text-align: left;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.textfield {
+    float: right;
+    margin-right: 70px;
+}
+
+.clock-field {
+    width: 60px;
+}
+
+.button-panel {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.clock {
+    margin-top: 200px;
+    font-family: 'Lucida Console';
+    font-size: 20px;
+}
+
+.login-form {
+    margin: auto;
+    list-style-type: none;
+    width: 470px;
+}
+
+    .login-form li {
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
+
+    .login-form ul {
+        list-style-type: none;
+        margin-left: 110px;
+        width: 430px;
+    }
+
+        .login-form ul li:last-child {
+            margin-top: 7px;
+            margin-bottom: 10px;
+        }
+
+            .login-form ul li:last-child input {
+                float: left;
+                margin-left: -10px;
+            }
+
+            .login-form ul li:last-child label {
+                float: left;
+                margin-right: 10px;
+            }
+
+    .login-form input {
+        float: left;
+    }
+
+    .login-form span {
+    }
+
+    .login-form label {
+        float: left;
+        width: 100px;
+    }
+
+.login-button {
+    float: left;
+    margin-bottom: 40px;
+    margin-left: 85px;
+}
+
+.register-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.validation-summary {
+    color: red;
+    text-align: center;
+}
+
+.register-legend {
+    display: block;
+    width: 700px;
+    padding: 0px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: rgb(51, 51, 51);
+    border-width: 0px 0px 1px;
+    border-style: none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color rgb(229, 229, 229);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.register-list {
+    margin-left: 240px;
+    width: 600px;
+    list-style-type: none;
+}
+
+    .register-list label {
+        width: 130px;
+    }
+
+.register-button {
+    float: left;
+    margin-bottom: 40px;
+    margin-left: 498px;
+}
+
+.login-logoff-link {
+    margin: 0px;
+    padding: 0px;
+}
+
+.login-name {
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+.save-setting {
+    margin-bottom: 20px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tempos-grid {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}

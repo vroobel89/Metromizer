@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    
+    <link rel="stylesheet" href="styles/moje.css" type="text/css" />
+     <link rel="stylesheet" href="bootstrap-3.0.3/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap-3.0.3/dist/css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="http://code.createjs.com/soundjs-0.5.0.min.js"></script>
+    <script src="Javascript/script3.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="init()">
+ 
+    
+    
+     <form id="form1" runat="server">
+    
+    <div class="main-container">
+        
+        <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="Default.aspx">Metromizer</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li ><a href="simple-metronome.aspx">Simple Metronome</a></li>
+      
+     
+    </ul>
+    <div class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        
+      </div>
+      
+    </div>
+    
+       <asp:LoginView ID="LoginView1" runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a id="registerLink" runat="server" href="~/Register.aspx">Register</a></li>
+                                <li><a id="loginLink" runat="server" href="~/Login.aspx">Log in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            
+                                <ul class="nav navbar-nav navbar-right">
+                                <li ><a style="color:blue;" href="Organizer.aspx">[ <asp:LoginName   ID="LoginName1" runat="server" /> ]</a></li>
+                               <li> <asp:LoginStatus ID="LoginStatus1" CssClass="login-logoff-link" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" /> </li>
+                            </ul>
+                                   
+                                
+                                
+                                
+                                 
+                                
+                            
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+
+    <div>
+        <asp:ContentPlaceHolder id="MainContent" runat="server">
+            
+
+        </asp:ContentPlaceHolder>
+    </div>
+
+         <div>
+        <asp:ContentPlaceHolder id="FeaturedContent" runat="server">
+            
+
+        </asp:ContentPlaceHolder>
+    </div>
+      <div class="footer">
+         <div class="footer-note">
+           <p>Made by Mikołaj Wróblewski 2014
+        </p>
+      </div> 
+          </div>
+    
+    </div>
+    </form>
+
+    
+
+
+</body>
+</html>
